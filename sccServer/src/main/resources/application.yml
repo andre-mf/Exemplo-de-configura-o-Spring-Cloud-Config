@@ -1,0 +1,26 @@
+server:
+  port: 8888
+spring:
+  security:
+    user:
+      name: ${security_user}
+      password: ${security_password}
+  cloud:
+    config:
+      server:
+        git:
+          timeout: 10
+          uri: ${config_git_url}
+          default-label: main
+          ignoreLocalSshSettings: true
+          privateKey: ${config_private_key}
+          search-paths: '{application}/{profile}'
+        encrypt:
+          enabled: false
+
+encrypt:
+  key-store:
+    location: key/sccKey.jks
+    password: 123456
+    alias: sccKey
+    secret: 123456

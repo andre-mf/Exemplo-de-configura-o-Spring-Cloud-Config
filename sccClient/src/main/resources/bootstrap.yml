@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: teste
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://${scc_server}:8888
+      username: ${security_user}
+      password: ${security_password}
+encrypt:
+  key-store:
+    location: key/sccKey.jks
+    secret: 123456
+    alias: sccKey
+    password: 123456
