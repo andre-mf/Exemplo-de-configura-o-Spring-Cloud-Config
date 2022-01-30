@@ -99,7 +99,7 @@ encrypt:
 
 🗝️ Para *encriptar* um valor, o Spring Cloud Config dispõe o *endpoint* **/encrypt**.
 
-Utilizando Postman, por exemplo,  na guia *Authorization*, seleciona-se o tipo *Basic Auth* para informar o usuário e senha definidos para o Spring Security. A resposta da chamada *POST* ao endpoint contém o valor encriptado. Ela deverá ser copiada e coladoa no arquivo de configuração que estará no repositório *git*. Deve-se adicionar o prefixo **{cipher}**, como ilustra o exemplo:
+Utilizando Postman, por exemplo,  na guia *Authorization*, seleciona-se o tipo *Basic Auth* para informar o usuário e senha definidos para o Spring Security. A resposta da chamada *POST* ao endpoint contém o valor encriptado. Ela deverá ser copiada e colada no arquivo de configuração que estará no repositório *git*. Deve-se adicionar o prefixo **{cipher}**, como ilustra o exemplo:
 
 ```yml
 spring:

@@ -7,7 +7,7 @@
 docker build -t andremf/sccclient:latest -f src/main/resources/Docker/Dockerfile target/
 
 # Push da imagem
-docker push andremf/sccserver:latest
+docker push andremf/sccclient:latest
 
 # Remoção do diretório target
 rm -rf target/
