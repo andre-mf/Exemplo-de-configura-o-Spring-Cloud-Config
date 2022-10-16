@@ -1,4 +1,4 @@
-# Exemplo de implementação do micro-serviço de distribuição de configurações Spring Cloud Config
+# Exemplo de implementação do serviço de distribuição de configurações Spring Cloud Config
 
 ### 
 
